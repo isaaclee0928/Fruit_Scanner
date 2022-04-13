@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D9F619628073B42008C7C6F /* Fruit_ScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F619528073B42008C7C6F /* Fruit_ScannerApp.swift */; };
+		5D9F619828073B42008C7C6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F619728073B42008C7C6F /* ContentView.swift */; };
+		5D9F619A28073B43008C7C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9F619928073B43008C7C6F /* Assets.xcassets */; };
+		5D9F619D28073B43008C7C6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9F619C28073B43008C7C6F /* Preview Assets.xcassets */; };
+		5D9F619F28073B43008C7C6F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F619E28073B43008C7C6F /* Persistence.swift */; };
+		5D9F61A228073B43008C7C6F /* Fruit_Scanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61A028073B43008C7C6F /* Fruit_Scanner.xcdatamodeld */; };
+		5D9F61AC28073B43008C7C6F /* Fruit_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61AB28073B43008C7C6F /* Fruit_ScannerTests.swift */; };
+		5D9F61B628073B43008C7C6F /* Fruit_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61B528073B43008C7C6F /* Fruit_ScannerUITests.swift */; };
+		5D9F61B828073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61B728073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D9F61A828073B43008C7C6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D9F618A28073B42008C7C6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D9F619128073B42008C7C6F;
+			remoteInfo = Fruit_Scanner;
+		};
+		5D9F61B228073B43008C7C6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D9F618A28073B42008C7C6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D9F619128073B42008C7C6F;
+			remoteInfo = Fruit_Scanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D9F619228073B42008C7C6F /* Fruit_Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruit_Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9F619528073B42008C7C6F /* Fruit_ScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit_ScannerApp.swift; sourceTree = "<group>"; };
+		5D9F619728073B42008C7C6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5D9F619928073B43008C7C6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D9F619C28073B43008C7C6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D9F619E28073B43008C7C6F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5D9F61A128073B43008C7C6F /* Fruit_Scanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fruit_Scanner.xcdatamodel; sourceTree = "<group>"; };
+		5D9F61A728073B43008C7C6F /* Fruit_ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fruit_ScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9F61AB28073B43008C7C6F /* Fruit_ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit_ScannerTests.swift; sourceTree = "<group>"; };
+		5D9F61B128073B43008C7C6F /* Fruit_ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fruit_ScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9F61B528073B43008C7C6F /* Fruit_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit_ScannerUITests.swift; sourceTree = "<group>"; };
+		5D9F61B728073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit_ScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9F618F28073B42008C7C6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9F61A428073B43008C7C6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9F61AE28073B43008C7C6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D9F618928073B42008C7C6F = {
+			isa = PBXGroup;
+			children = (
+				5D9F619428073B42008C7C6F /* Fruit_Scanner */,
+				5D9F61AA28073B43008C7C6F /* Fruit_ScannerTests */,
+				5D9F61B428073B43008C7C6F /* Fruit_ScannerUITests */,
+				5D9F619328073B42008C7C6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D9F619328073B42008C7C6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D9F619228073B42008C7C6F /* Fruit_Scanner.app */,
+				5D9F61A728073B43008C7C6F /* Fruit_ScannerTests.xctest */,
+				5D9F61B128073B43008C7C6F /* Fruit_ScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D9F619428073B42008C7C6F /* Fruit_Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				5D9F619528073B42008C7C6F /* Fruit_ScannerApp.swift */,
+				5D9F619728073B42008C7C6F /* ContentView.swift */,
+				5D9F619928073B43008C7C6F /* Assets.xcassets */,
+				5D9F619E28073B43008C7C6F /* Persistence.swift */,
+				5D9F61A028073B43008C7C6F /* Fruit_Scanner.xcdatamodeld */,
+				5D9F619B28073B43008C7C6F /* Preview Content */,
+			);
+			path = Fruit_Scanner;
+			sourceTree = "<group>";
+		};
+		5D9F619B28073B43008C7C6F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5D9F619C28073B43008C7C6F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D9F61AA28073B43008C7C6F /* Fruit_ScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D9F61AB28073B43008C7C6F /* Fruit_ScannerTests.swift */,
+			);
+			path = Fruit_ScannerTests;
+			sourceTree = "<group>";
+		};
+		5D9F61B428073B43008C7C6F /* Fruit_ScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D9F61B528073B43008C7C6F /* Fruit_ScannerUITests.swift */,
+				5D9F61B728073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift */,
+			);
+			path = Fruit_ScannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D9F619128073B42008C7C6F /* Fruit_Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9F61BB28073B43008C7C6F /* Build configuration list for PBXNativeTarget "Fruit_Scanner" */;
+			buildPhases = (
+				5D9F618E28073B42008C7C6F /* Sources */,
+				5D9F618F28073B42008C7C6F /* Frameworks */,
+				5D9F619028073B42008C7C6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fruit_Scanner;
+			productName = Fruit_Scanner;
+			productReference = 5D9F619228073B42008C7C6F /* Fruit_Scanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D9F61A628073B43008C7C6F /* Fruit_ScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9F61BE28073B43008C7C6F /* Build configuration list for PBXNativeTarget "Fruit_ScannerTests" */;
+			buildPhases = (
+				5D9F61A328073B43008C7C6F /* Sources */,
+				5D9F61A428073B43008C7C6F /* Frameworks */,
+				5D9F61A528073B43008C7C6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D9F61A928073B43008C7C6F /* PBXTargetDependency */,
+			);
+			name = Fruit_ScannerTests;
+			productName = Fruit_ScannerTests;
+			productReference = 5D9F61A728073B43008C7C6F /* Fruit_ScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D9F61B028073B43008C7C6F /* Fruit_ScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9F61C128073B43008C7C6F /* Build configuration list for PBXNativeTarget "Fruit_ScannerUITests" */;
+			buildPhases = (
+				5D9F61AD28073B43008C7C6F /* Sources */,
+				5D9F61AE28073B43008C7C6F /* Frameworks */,
+				5D9F61AF28073B43008C7C6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D9F61B328073B43008C7C6F /* PBXTargetDependency */,
+			);
+			name = Fruit_ScannerUITests;
+			productName = Fruit_ScannerUITests;
+			productReference = 5D9F61B128073B43008C7C6F /* Fruit_ScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D9F618A28073B42008C7C6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5D9F619128073B42008C7C6F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					5D9F61A628073B43008C7C6F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 5D9F619128073B42008C7C6F;
+					};
+					5D9F61B028073B43008C7C6F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 5D9F619128073B42008C7C6F;
+					};
+				};
+			};
+			buildConfigurationList = 5D9F618D28073B42008C7C6F /* Build configuration list for PBXProject "Fruit_Scanner" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D9F618928073B42008C7C6F;
+			productRefGroup = 5D9F619328073B42008C7C6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D9F619128073B42008C7C6F /* Fruit_Scanner */,
+				5D9F61A628073B43008C7C6F /* Fruit_ScannerTests */,
+				5D9F61B028073B43008C7C6F /* Fruit_ScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D9F619028073B42008C7C6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9F619D28073B43008C7C6F /* Preview Assets.xcassets in Resources */,
+				5D9F619A28073B43008C7C6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9F61A528073B43008C7C6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9F61AF28073B43008C7C6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D9F618E28073B42008C7C6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9F619F28073B43008C7C6F /* Persistence.swift in Sources */,
+				5D9F61A228073B43008C7C6F /* Fruit_Scanner.xcdatamodeld in Sources */,
+				5D9F619828073B42008C7C6F /* ContentView.swift in Sources */,
+				5D9F619628073B42008C7C6F /* Fruit_ScannerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9F61A328073B43008C7C6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9F61AC28073B43008C7C6F /* Fruit_ScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9F61AD28073B43008C7C6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9F61B828073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift in Sources */,
+				5D9F61B628073B43008C7C6F /* Fruit_ScannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D9F61A928073B43008C7C6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D9F619128073B42008C7C6F /* Fruit_Scanner */;
+			targetProxy = 5D9F61A828073B43008C7C6F /* PBXContainerItemProxy */;
+		};
+		5D9F61B328073B43008C7C6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D9F619128073B42008C7C6F /* Fruit_Scanner */;
+			targetProxy = 5D9F61B228073B43008C7C6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D9F61B928073B43008C7C6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D9F61BA28073B43008C7C6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D9F61BC28073B43008C7C6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fruit_Scanner/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D9F61BD28073B43008C7C6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fruit_Scanner/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D9F61BF28073B43008C7C6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fruit_Scanner.app/Fruit_Scanner";
+			};
+			name = Debug;
+		};
+		5D9F61C028073B43008C7C6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fruit_Scanner.app/Fruit_Scanner";
+			};
+			name = Release;
+		};
+		5D9F61C228073B43008C7C6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fruit_Scanner;
+			};
+			name = Debug;
+		};
+		5D9F61C328073B43008C7C6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fruit_Scanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D9F618D28073B42008C7C6F /* Build configuration list for PBXProject "Fruit_Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9F61B928073B43008C7C6F /* Debug */,
+				5D9F61BA28073B43008C7C6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9F61BB28073B43008C7C6F /* Build configuration list for PBXNativeTarget "Fruit_Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9F61BC28073B43008C7C6F /* Debug */,
+				5D9F61BD28073B43008C7C6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9F61BE28073B43008C7C6F /* Build configuration list for PBXNativeTarget "Fruit_ScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9F61BF28073B43008C7C6F /* Debug */,
+				5D9F61C028073B43008C7C6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9F61C128073B43008C7C6F /* Build configuration list for PBXNativeTarget "Fruit_ScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9F61C228073B43008C7C6F /* Debug */,
+				5D9F61C328073B43008C7C6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D9F61A028073B43008C7C6F /* Fruit_Scanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5D9F61A128073B43008C7C6F /* Fruit_Scanner.xcdatamodel */,
+			);
+			currentVersion = 5D9F61A128073B43008C7C6F /* Fruit_Scanner.xcdatamodel */;
+			path = Fruit_Scanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5D9F618A28073B42008C7C6F /* Project object */;
+}
