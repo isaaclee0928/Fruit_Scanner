@@ -120,7 +120,13 @@ struct loginPage: View {
             .disabled(loginModel.email == "" || loginModel.password == "")
             .opacity(loginModel.email == "" || loginModel.password == "" ? 0.5 : 1)
             
-            
+            NavigationLink {
+                
+                
+            } label: {
+                Text("create account")
+                    .foregroundColor(.gray)
+            }
         }
         .padding(.horizontal, 25)
         .padding(.vertical)
