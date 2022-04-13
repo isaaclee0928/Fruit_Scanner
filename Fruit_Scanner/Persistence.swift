@@ -1,9 +1,7 @@
 //
 //  Persistence.swift
 //  Fruit_Scanner
-//
-//  Created by Isaac Lee on 14/4/2022.
-//
+
 
 import CoreData
 

@@ -16,6 +16,14 @@
 		5D9F61AC28073B43008C7C6F /* Fruit_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61AB28073B43008C7C6F /* Fruit_ScannerTests.swift */; };
 		5D9F61B628073B43008C7C6F /* Fruit_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61B528073B43008C7C6F /* Fruit_ScannerUITests.swift */; };
 		5D9F61B828073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61B728073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift */; };
+		5D9F61C728073C12008C7C6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D9F61C628073C12008C7C6F /* GoogleService-Info.plist */; };
+		5D9F61C928073C6D008C7C6F /* loginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61C828073C6D008C7C6F /* loginPage.swift */; };
+		5D9F61CB28073C7F008C7C6F /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61CA28073C7F008C7C6F /* loginView.swift */; };
+		5D9F61CF28073CDD008C7C6F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61CE28073CDD008C7C6F /* FirebaseAuth */; };
+		5D9F61D128073CDD008C7C6F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61D028073CDD008C7C6F /* FirebaseDatabase */; };
+		5D9F61D328073CDD008C7C6F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61D228073CDD008C7C6F /* FirebaseFirestore */; };
+		5D9F61D528073CDD008C7C6F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61D428073CDD008C7C6F /* FirebaseStorage */; };
+		5D9F61D728073D52008C7C6F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61D628073D52008C7C6F /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,10 @@
 		5D9F61B128073B43008C7C6F /* Fruit_ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fruit_ScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9F61B528073B43008C7C6F /* Fruit_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit_ScannerUITests.swift; sourceTree = "<group>"; };
 		5D9F61B728073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit_ScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D9F61C628073C12008C7C6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D9F61C828073C6D008C7C6F /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
+		5D9F61CA28073C7F008C7C6F /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		5D9F61D628073D52008C7C6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9F61D128073CDD008C7C6F /* FirebaseDatabase in Frameworks */,
+				5D9F61D528073CDD008C7C6F /* FirebaseStorage in Frameworks */,
+				5D9F61CF28073CDD008C7C6F /* FirebaseAuth in Frameworks */,
+				5D9F61D328073CDD008C7C6F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5D9F619428073B42008C7C6F /* Fruit_Scanner */,
+				5D9F61C628073C12008C7C6F /* GoogleService-Info.plist */,
 				5D9F61AA28073B43008C7C6F /* Fruit_ScannerTests */,
 				5D9F61B428073B43008C7C6F /* Fruit_ScannerUITests */,
 				5D9F619328073B42008C7C6F /* Products */,
@@ -98,8 +115,10 @@
 		5D9F619428073B42008C7C6F /* Fruit_Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				5D9F61CC28073C87008C7C6F /* login */,
 				5D9F619528073B42008C7C6F /* Fruit_ScannerApp.swift */,
 				5D9F619728073B42008C7C6F /* ContentView.swift */,
+				5D9F61D628073D52008C7C6F /* Home.swift */,
 				5D9F619928073B43008C7C6F /* Assets.xcassets */,
 				5D9F619E28073B43008C7C6F /* Persistence.swift */,
 				5D9F61A028073B43008C7C6F /* Fruit_Scanner.xcdatamodeld */,
@@ -133,6 +152,15 @@
 			path = Fruit_ScannerUITests;
 			sourceTree = "<group>";
 		};
+		5D9F61CC28073C87008C7C6F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				5D9F61C828073C6D008C7C6F /* loginPage.swift */,
+				5D9F61CA28073C7F008C7C6F /* loginView.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +177,12 @@
 			dependencies = (
 			);
 			name = Fruit_Scanner;
+			packageProductDependencies = (
+				5D9F61CE28073CDD008C7C6F /* FirebaseAuth */,
+				5D9F61D028073CDD008C7C6F /* FirebaseDatabase */,
+				5D9F61D228073CDD008C7C6F /* FirebaseFirestore */,
+				5D9F61D428073CDD008C7C6F /* FirebaseStorage */,
+			);
 			productName = Fruit_Scanner;
 			productReference = 5D9F619228073B42008C7C6F /* Fruit_Scanner.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +255,9 @@
 				Base,
 			);
 			mainGroup = 5D9F618928073B42008C7C6F;
+			packageReferences = (
+				5D9F61CD28073CDD008C7C6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5D9F619328073B42008C7C6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,6 +276,7 @@
 			files = (
 				5D9F619D28073B43008C7C6F /* Preview Assets.xcassets in Resources */,
 				5D9F619A28073B43008C7C6F /* Assets.xcassets in Resources */,
+				5D9F61C728073C12008C7C6F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +303,11 @@
 			files = (
 				5D9F619F28073B43008C7C6F /* Persistence.swift in Sources */,
 				5D9F61A228073B43008C7C6F /* Fruit_Scanner.xcdatamodeld in Sources */,
+				5D9F61C928073C6D008C7C6F /* loginPage.swift in Sources */,
 				5D9F619828073B42008C7C6F /* ContentView.swift in Sources */,
+				5D9F61CB28073C7F008C7C6F /* loginView.swift in Sources */,
 				5D9F619628073B42008C7C6F /* Fruit_ScannerApp.swift in Sources */,
+				5D9F61D728073D52008C7C6F /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fruit_Scanner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-Scanner";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.FruitScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -457,6 +499,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fruit_Scanner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,7 +510,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Fruit-Scanner";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.FruitScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -587,6 +630,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D9F61CD28073CDD008C7C6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D9F61CE28073CDD008C7C6F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D9F61CD28073CDD008C7C6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5D9F61D028073CDD008C7C6F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D9F61CD28073CDD008C7C6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		5D9F61D228073CDD008C7C6F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D9F61CD28073CDD008C7C6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5D9F61D428073CDD008C7C6F /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D9F61CD28073CDD008C7C6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5D9F61A028073B43008C7C6F /* Fruit_Scanner.xcdatamodeld */ = {

@@ -1,9 +1,7 @@
 //
 //  Fruit_ScannerTests.swift
 //  Fruit_ScannerTests
-//
-//  Created by Isaac Lee on 14/4/2022.
-//
+
 
 import XCTest
 @testable import Fruit_Scanner
