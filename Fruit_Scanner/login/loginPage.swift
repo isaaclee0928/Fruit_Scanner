@@ -122,7 +122,7 @@ struct loginPage: View {
             .opacity(loginModel.email == "" || loginModel.password == "" ? 0.5 : 1)
             
             NavigationLink {
-                
+                SignUp()
                 
             } label: {
                 Text("create account")

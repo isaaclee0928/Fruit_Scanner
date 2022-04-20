@@ -24,6 +24,7 @@
 		5D9F61D328073CDD008C7C6F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61D228073CDD008C7C6F /* FirebaseFirestore */; };
 		5D9F61D528073CDD008C7C6F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61D428073CDD008C7C6F /* FirebaseStorage */; };
 		5D9F61D728073D52008C7C6F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61D628073D52008C7C6F /* Home.swift */; };
+		5DD5B9B1280FD1E800C5F277 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5B9B0280FD1E800C5F277 /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		5D9F61C828073C6D008C7C6F /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
 		5D9F61CA28073C7F008C7C6F /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		5D9F61D628073D52008C7C6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5DD5B9B0280FD1E800C5F277 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				5D9F61CC28073C87008C7C6F /* login */,
 				5D9F619528073B42008C7C6F /* Fruit_ScannerApp.swift */,
+				5DD5B9B0280FD1E800C5F277 /* SignUp.swift */,
 				5D9F619728073B42008C7C6F /* ContentView.swift */,
 				5D9F61D628073D52008C7C6F /* Home.swift */,
 				5D9F619928073B43008C7C6F /* Assets.xcassets */,
@@ -306,6 +309,7 @@
 				5D9F61C928073C6D008C7C6F /* loginPage.swift in Sources */,
 				5D9F619828073B42008C7C6F /* ContentView.swift in Sources */,
 				5D9F61CB28073C7F008C7C6F /* LoginModel.swift in Sources */,
+				5DD5B9B1280FD1E800C5F277 /* SignUp.swift in Sources */,
 				5D9F619628073B42008C7C6F /* Fruit_ScannerApp.swift in Sources */,
 				5D9F61D728073D52008C7C6F /* Home.swift in Sources */,
 			);
