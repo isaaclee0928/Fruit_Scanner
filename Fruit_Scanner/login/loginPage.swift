@@ -6,7 +6,7 @@ import SwiftUI
 
 struct loginPage: View {
     
-    @StateObject var loginModel: loginView = loginView()
+    @StateObject var loginModel: LoginModel = LoginModel()
     
     // FaceID Properties
     @State var useFaceID: Bool = false
@@ -100,6 +100,7 @@ struct loginPage: View {
                 Task{
                     do{
                         try await loginModel.loginUser(useFaceID: useFaceID)
+                        
                     } catch {
                         loginModel.errorMsg = error.localizedDescription
                         loginModel.showError.toggle()

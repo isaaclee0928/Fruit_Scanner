@@ -8,7 +8,7 @@ import SwiftUI
 import Firebase
 import LocalAuthentication
 
-class loginView: ObservableObject {
+class LoginModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     
@@ -25,17 +25,34 @@ class loginView: ObservableObject {
     @Published var errorMsg: String = ""
     
     // Firebase Login
-    func loginUser(useFaceID: Bool,email: String = "",password: String = "")async throws{
+    func loginUser(useFaceID: Bool, email: String = "",password: String = "", byFaceID : Bool = false) async throws{
         
-        let _ = try await Auth.auth().signIn(withEmail: email != "" ? email : self.email, password: password != "" ? password : self.password)
+        print("\(self.email) \(self.password)")
         
         DispatchQueue.main.async {
-            if useFaceID{
-                self.useFaceID = useFaceID
+            
+            if useFaceID == false || byFaceID == false {
                 // Storing for future FaceID Login
-                self.FaceIDEmail = email
-                self.FaceIDPassword = password
+                if useFaceID == true {
+                    self.useFaceID = useFaceID
+                }
+                self.FaceIDEmail = self.email
+                self.FaceIDPassword = self.password
+            } else if useFaceID && byFaceID == true {
+                //extract stored information
+                self.email = self.FaceIDEmail
+                self.password = self.FaceIDPassword
             }
+        }
+        
+        if byFaceID == true {
+            let _ = try await Auth.auth().signIn(withEmail:  self.FaceIDEmail, password: self.FaceIDPassword)
+        } else {
+            let _ = try await Auth.auth().signIn(withEmail: self.email, password: self.password)
+        }
+        
+        
+        DispatchQueue.main.async {
             self.logStatus = true
         }
     }
@@ -55,7 +72,7 @@ class loginView: ObservableObject {
                                                           localizedReason: "To Login Into App")
         
         if status{
-            try await loginUser(useFaceID: useFaceID,email: self.email,password:self.password)
+            try await loginUser(useFaceID: useFaceID,email: self.email, password:self.password, byFaceID: true)
         }
     }
     

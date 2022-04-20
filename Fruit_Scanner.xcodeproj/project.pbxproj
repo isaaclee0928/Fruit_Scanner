@@ -18,7 +18,7 @@
 		5D9F61B828073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61B728073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift */; };
 		5D9F61C728073C12008C7C6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D9F61C628073C12008C7C6F /* GoogleService-Info.plist */; };
 		5D9F61C928073C6D008C7C6F /* loginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61C828073C6D008C7C6F /* loginPage.swift */; };
-		5D9F61CB28073C7F008C7C6F /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61CA28073C7F008C7C6F /* loginView.swift */; };
+		5D9F61CB28073C7F008C7C6F /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F61CA28073C7F008C7C6F /* LoginModel.swift */; };
 		5D9F61CF28073CDD008C7C6F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61CE28073CDD008C7C6F /* FirebaseAuth */; };
 		5D9F61D128073CDD008C7C6F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61D028073CDD008C7C6F /* FirebaseDatabase */; };
 		5D9F61D328073CDD008C7C6F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9F61D228073CDD008C7C6F /* FirebaseFirestore */; };
@@ -58,7 +58,7 @@
 		5D9F61B728073B43008C7C6F /* Fruit_ScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit_ScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5D9F61C628073C12008C7C6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5D9F61C828073C6D008C7C6F /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
-		5D9F61CA28073C7F008C7C6F /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		5D9F61CA28073C7F008C7C6F /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		5D9F61D628073D52008C7C6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				5D9F61C828073C6D008C7C6F /* loginPage.swift */,
-				5D9F61CA28073C7F008C7C6F /* loginView.swift */,
+				5D9F61CA28073C7F008C7C6F /* LoginModel.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				5D9F61A228073B43008C7C6F /* Fruit_Scanner.xcdatamodeld in Sources */,
 				5D9F61C928073C6D008C7C6F /* loginPage.swift in Sources */,
 				5D9F619828073B42008C7C6F /* ContentView.swift in Sources */,
-				5D9F61CB28073C7F008C7C6F /* loginView.swift in Sources */,
+				5D9F61CB28073C7F008C7C6F /* LoginModel.swift in Sources */,
 				5D9F619628073B42008C7C6F /* Fruit_ScannerApp.swift in Sources */,
 				5D9F61D728073D52008C7C6F /* Home.swift in Sources */,
 			);
