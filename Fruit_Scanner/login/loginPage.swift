@@ -1,7 +1,3 @@
-//
-//  loginPage.swift
-//  FruitScanner
-
 import SwiftUI
 
 struct loginPage: View {

@@ -1,8 +1,3 @@
-//
-//  ContentView.swift
-//  FruitScanner
-
-
 import SwiftUI
 import CoreData
 import Firebase

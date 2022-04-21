@@ -38,6 +38,7 @@ class LoginModel: ObservableObject {
                 }
                 self.FaceIDEmail = self.email
                 self.FaceIDPassword = self.password
+                
             } else if useFaceID && byFaceID == true {
                 //extract stored information
                 self.email = self.FaceIDEmail
@@ -45,6 +46,7 @@ class LoginModel: ObservableObject {
             }
         }
         
+        //check the user use faceID success or not success
         if byFaceID == true {
             let _ = try await Auth.auth().signIn(withEmail:  self.FaceIDEmail, password: self.FaceIDPassword)
         } else {
