@@ -8,10 +8,11 @@ struct ContentView: View {
     @AppStorage("log_status") var logStatus: Bool = false
 
     var body: some View {
+
         NavigationView {
             
             if logStatus{
-                Home()
+                AppView().navigationBarHidden(false)
             }else {
                 loginPage().navigationBarHidden(true)
             }
