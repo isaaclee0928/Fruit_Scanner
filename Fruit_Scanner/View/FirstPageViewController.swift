@@ -50,22 +50,15 @@ class FirstPageViewController: UIViewController {
     
     
     @IBAction func SignOutBtnOnTap(_ sender: Any) {
-            
+        
         try? Auth.auth().signOut()
         logStatus = false
         
+        let controller = UIHostingController(rootView: loginPage())
         
-        /*
-        let firebaseAuth = Auth.auth()
-        do{
-        try firebaseAuth.signOut()
-              //let firebaseAuth = Auth.auth()
-            logStatus = false
-            print("signout success")
-              //showAlertS()
-          } catch let signOutError as NSError {
-            print("Error signing out: %@", signOutError)
-          }*/
+        view.window?.rootViewController = controller
+        view.window?.makeKeyAndVisible()
+       
     }
     /*
     func toHomeView(){

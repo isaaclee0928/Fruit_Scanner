@@ -43,7 +43,6 @@
 		5DD5B9DA2812F50800C5F277 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5B9CE2812F50800C5F277 /* RecordTableViewCell.swift */; };
 		5DD5B9DB2812F50800C5F277 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5B9CF2812F50800C5F277 /* Record.swift */; };
 		5DD5B9DC2812F50800C5F277 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5B9D02812F50800C5F277 /* RecordTableViewController.swift */; };
-		5DD5B9DE2812FF8E00C5F277 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5B9DD2812FF8E00C5F277 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +98,6 @@
 		5DD5B9CE2812F50800C5F277 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		5DD5B9CF2812F50800C5F277 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		5DD5B9D02812F50800C5F277 /* RecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
-		5DD5B9DD2812FF8E00C5F277 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +169,6 @@
 				5DD5B9CC2812F50800C5F277 /* RecordView */,
 				5D9F61A028073B43008C7C6F /* Fruit_Scanner.xcdatamodeld */,
 				5D9F619B28073B43008C7C6F /* Preview Content */,
-				5DD5B9DD2812FF8E00C5F277 /* WelcomeViewController.swift */,
 			);
 			path = Fruit_Scanner;
 			sourceTree = "<group>";
@@ -421,7 +418,6 @@
 				5D9F619828073B42008C7C6F /* ContentView.swift in Sources */,
 				5D9F61CB28073C7F008C7C6F /* LoginModel.swift in Sources */,
 				5DD5B9C12812F33200C5F277 /* Constant.swift in Sources */,
-				5DD5B9DE2812FF8E00C5F277 /* WelcomeViewController.swift in Sources */,
 				5DD5B9B1280FD1E800C5F277 /* SignUp.swift in Sources */,
 				5DD5B9D72812F50800C5F277 /* Extensions.swift in Sources */,
 				5D9F619628073B42008C7C6F /* Fruit_ScannerApp.swift in Sources */,

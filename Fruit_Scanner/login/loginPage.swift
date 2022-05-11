@@ -8,6 +8,7 @@ struct loginPage: View {
     @State var useFaceID: Bool = false
     
     var body: some View {
+        
         VStack{
             
             Circle()

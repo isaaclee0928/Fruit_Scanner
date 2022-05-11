@@ -77,22 +77,4 @@ class LoginModel: ObservableObject {
             try await loginUser(useFaceID: useFaceID,email: self.email, password:self.password, byFaceID: true)
         }
     }
-    
-    // Only faceID, hasb't save account
-    /*
-    func authenticate() {
-        let context = LAContext()
-        var error: NSError?
-        
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-                                   localizedReason: "This is for security reasons") { sucess, authenticationError in
-                if sucess {
-                    self.logStatus = true
-                } 
-                
-            }
-        }
-    }*/
 }

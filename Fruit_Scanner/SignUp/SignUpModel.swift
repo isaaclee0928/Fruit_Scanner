@@ -1,5 +1,6 @@
 import SwiftUI
 import Firebase
+import FirebaseAuth
 
 class SignUpModel: ObservableObject {
 
@@ -11,9 +12,15 @@ class SignUpModel: ObservableObject {
 
     // create account to firebase
     func createAccount() {
-        Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
-          
+        Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, err in
+            // Check for errors
+            if err != nil {
+                
+                // There was an error creating the user
+                print("Error creating user")
+            }
         }
     }
+    
 }
 
