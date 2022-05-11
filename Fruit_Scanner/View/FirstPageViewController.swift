@@ -17,6 +17,9 @@ class FirstPageViewController: UIViewController {
     @IBOutlet weak var FruitDesBtn: UIButton!
     @IBOutlet weak var RecordBtn: UIButton!
     
+    // Log Status
+    @AppStorage("log_status") var logStatus: Bool = false
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setbtnShadow()
@@ -47,16 +50,22 @@ class FirstPageViewController: UIViewController {
     
     
     @IBAction func SignOutBtnOnTap(_ sender: Any) {
+            
+        try? Auth.auth().signOut()
+        logStatus = false
         
+        
+        /*
         let firebaseAuth = Auth.auth()
         do{
         try firebaseAuth.signOut()
-              let firebaseAuth = Auth.auth()
-              print("signout success")
+              //let firebaseAuth = Auth.auth()
+            logStatus = false
+            print("signout success")
               //showAlertS()
           } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
-          }
+          }*/
     }
     /*
     func toHomeView(){

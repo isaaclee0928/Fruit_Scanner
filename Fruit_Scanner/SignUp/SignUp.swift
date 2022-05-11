@@ -69,7 +69,7 @@ struct SignUp: View {
                 signUpModel.createAccount()
                 
                 NavigationView{
-                    loginPage()
+                    AppView()
                 }
             }
             
