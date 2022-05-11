@@ -12,7 +12,9 @@ struct ContentView: View {
         NavigationView {
             
             if logStatus{
-                AppView().navigationBarHidden(false)
+                AppView()
+                    .edgesIgnoringSafeArea(.all)
+                    .navigationBarHidden(false)
             }else {
                 loginPage().navigationBarHidden(true)
             }
