@@ -59,6 +59,8 @@ class FruitAIViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     //View didLoad
     override func viewDidLoad() {
+                
+        
         super.viewDidLoad()
         
         view.addSubview(label)

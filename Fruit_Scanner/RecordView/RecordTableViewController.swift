@@ -15,8 +15,11 @@ class RecordTableViewController: UITableViewController {
     var record = [Record]()
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        
         super.viewWillAppear(animated)
         getRecord()
+       
         self.tableView.reloadData()
     }
     

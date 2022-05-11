@@ -28,6 +28,9 @@ class FruitDetailViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        FruitImageView.layer.masksToBounds = true
+        FruitImageView.layer.cornerRadius = 30
 
         super.viewWillAppear(animated)
         GetData()

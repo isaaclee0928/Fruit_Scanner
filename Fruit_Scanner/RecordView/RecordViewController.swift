@@ -29,6 +29,12 @@ class RecordViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        recordImageView.layer.masksToBounds = true
+        recordImageView.layer.cornerRadius = 30
+        
+        RecordMainImageView.layer.masksToBounds = true
+        RecordMainImageView.layer.cornerRadius = 30
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
