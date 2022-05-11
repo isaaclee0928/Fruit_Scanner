@@ -132,10 +132,13 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-u7-LUu">
-                                <rect key="frame" x="154" y="725" width="129" height="31"/>
+                                <rect key="frame" x="313" y="389" width="81" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="rectangle.portrait.and.arrow.right.fill" catalog="system"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="SignOutBtnOnTap:" destination="Qmf-80-W2g" eventType="touchUpInside" id="72m-0N-7vU"/>
                                 </connections>
@@ -413,8 +416,9 @@
             <objects>
                 <hostingController id="vMD-1y-vMA" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEx-ig-2oO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Title" id="eTO-jk-OhL"/>
             </objects>
-            <point key="canvasLocation" x="-1790" y="-93"/>
+            <point key="canvasLocation" x="-3487" y="104"/>
         </scene>
         <!--FruitAI View Controller-->
         <scene sceneID="DTH-am-pdd">
@@ -650,6 +654,10 @@
         <image name="l.joystick.tilt.up.fill" catalog="system" width="122" height="128"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <image name="pile-fresh-fruits" width="4800" height="3200"/>
+        <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

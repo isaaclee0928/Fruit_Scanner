@@ -4,6 +4,9 @@ struct SignUp: View {
     
     @StateObject var signUpModel: SignUpModel = SignUpModel()
     
+    // Log Status
+    @AppStorage("log_status") var logStatus: Bool = false
+    
     var body: some View {
         
         VStack {
@@ -67,10 +70,14 @@ struct SignUp: View {
             
             Button("SignUp"){
                 signUpModel.createAccount()
-                
-                NavigationView{
-                    AppView()
+                    logStatus = true
+                if signUpModel.password != "" {
+                    
                 }
+                    AppView()
+                        .edgesIgnoringSafeArea(.all)
+                        .navigationBarHidden(false)
+                
             }
             
         }

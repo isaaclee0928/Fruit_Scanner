@@ -54,10 +54,8 @@ class FirstPageViewController: UIViewController {
         try? Auth.auth().signOut()
         logStatus = false
         
-        let controller = UIHostingController(rootView: loginPage())
-        
-        view.window?.rootViewController = controller
-        view.window?.makeKeyAndVisible()
+        let controller = UIHostingController(rootView: loginPage().navigationBarHidden(true))
+        show(controller, sender: Any?.self)
        
     }
     /*
