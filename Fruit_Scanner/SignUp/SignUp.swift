@@ -79,8 +79,9 @@ struct SignUp: View {
                         .navigationBarHidden(false)
                 
             }
-            
-        }
+            .disabled(signUpModel.email == "" || signUpModel.password == "" ||
+                      signUpModel.FirstName == "" || signUpModel.LastName == "" || signUpModel.UserName == "")
+        }       
     }
 }
 
