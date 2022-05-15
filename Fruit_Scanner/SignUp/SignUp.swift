@@ -1,11 +1,16 @@
 import SwiftUI
+import Firebase
 
 struct SignUp: View {
     
     @StateObject var signUpModel: SignUpModel = SignUpModel()
+    @StateObject var loginModel: LoginModel = LoginModel()
     
     // Log Status
     @AppStorage("log_status") var logStatus: Bool = false
+    
+    // FaceID Properties
+    @State var useFaceID: Bool = false
     
     var body: some View {
         
@@ -68,20 +73,27 @@ struct SignUp: View {
                 .textInputAutocapitalization(.never)
                 .padding(.top, 20)
             
-            Button("SignUp"){
+            Button {
                 signUpModel.createAccount()
-                    logStatus = true
-                if signUpModel.password != "" {
-                    
-                }
-                    AppView()
-                        .edgesIgnoringSafeArea(.all)
-                        .navigationBarHidden(false)
+                signUpModel.showError.toggle()
                 
+            } label: {
+                Text("SignUp")
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background {
+                        RoundedRectangle(cornerRadius: 8).fill(Color(.brown))
+                    }
             }
             .disabled(signUpModel.email == "" || signUpModel.password == "" ||
-                      signUpModel.FirstName == "" || signUpModel.LastName == "" || signUpModel.UserName == "")
-        }       
+                                   signUpModel.FirstName == "" || signUpModel.LastName == "" || signUpModel.UserName == "")
+            .opacity(signUpModel.email == "" || signUpModel.password == "" ||
+                                  signUpModel.FirstName == "" || signUpModel.LastName == "" || signUpModel.UserName == "" ? 0.5 : 1)
+            .padding(.vertical, 35)
+            .alert(signUpModel.errorMsg, isPresented: $signUpModel.showError){
+                
+            }
     }
 }
 
@@ -89,4 +101,5 @@ struct SignUp_Previews: PreviewProvider {
     static var previews: some View {
         SignUp()
     }
+}
 }

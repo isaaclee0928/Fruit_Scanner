@@ -12,12 +12,14 @@ struct ContentView: View {
             
             if logStatus{
                 AppView()
-                    .edgesIgnoringSafeArea(.all)
-                    .navigationBarHidden(false)
+                    //.navigationBarHidden(false)
             }else {
                 loginPage().navigationBarHidden(true)
             }
         }
+        .edgesIgnoringSafeArea(.all)
+        .navigationBarHidden(true)
+        .navigationTitle("")
         .onAppear{
             FirebaseApp.configure()
         }

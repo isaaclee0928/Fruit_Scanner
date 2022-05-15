@@ -3,12 +3,16 @@ import Firebase
 import FirebaseAuth
 
 class SignUpModel: ObservableObject {
-
+    
     @Published var FirstName: String = ""
     @Published var LastName: String = ""
     @Published var UserName: String = ""
     @Published var email: String = ""
     @Published var password: String = ""
+    
+    //Error
+    @Published var showError: Bool = false
+    @Published var errorMsg: String = "Build Success"
 
     // create account to firebase
     func createAccount() {

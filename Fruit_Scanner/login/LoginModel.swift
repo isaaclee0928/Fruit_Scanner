@@ -27,8 +27,6 @@ class LoginModel: ObservableObject {
     // Firebase Login
     func loginUser(useFaceID: Bool, email: String = "",password: String = "", byFaceID : Bool = false) async throws{
         
-        print("\(self.email) \(self.password)")
-        
         DispatchQueue.main.async {
             
             if useFaceID == false || byFaceID == false {
