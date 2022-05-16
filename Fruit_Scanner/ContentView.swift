@@ -21,7 +21,7 @@ struct ContentView: View {
         .navigationBarHidden(true)
         .navigationTitle("")
         .onAppear{
-            FirebaseApp.configure()
+          
         }
     }
 }
