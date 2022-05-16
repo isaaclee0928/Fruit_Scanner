@@ -7,22 +7,55 @@ struct loginPage: View {
     // FaceID Properties
     @State var useFaceID: Bool = false
     
+    
+    
+    @State var maxCircleHeight: CGFloat = 0
+    
     var body: some View {
         
         VStack{
+        
+        
+            GeometryReader{proxy -> AnyView in
+                
+                let height = proxy.frame(in: .global).height
+                
+                DispatchQueue.main.async {
+                    if maxCircleHeight == 0{
+                        maxCircleHeight = height
+                    }
+                }
+                
+                return AnyView(
+                    
+                    ZStack{
+                        Circle()
+                            .fill(Color("IconRed"))
+                            .offset(x: getRect().width / 2, y: -height / 1.5)
+                        Circle()
+                            .fill(Color("IconYellow"))
+                            .offset(x: -getRect().width / 2, y: -height / 1.7)
+                        Circle()
+                            .fill(Color("IconOrange"))
+                                .offset(y: -height / 1.5)
+                                .rotationEffect(.init(degrees: -5))
+                        
+                    }
+                )
+            }
+            .frame(maxHeight: getRect().width)
+        
+    
+        
+        VStack{
             
-            Circle()
-                .trim(from: 0, to: 0.5)
-                .fill(.black)
-                .frame(width: 45, height: 45)
-                .rotationEffect(.init(degrees: -90))
-                .hLeading()
-                .offset(x: -23)
-                .padding(.bottom, 30)
+    
             
             Text("Hey, \nLogin Now")
                 .font(.largeTitle.bold())
                 .foregroundColor(.black)
+           
+            
                 .hLeading()
             
             TextField("Email", text: $loginModel.email)
@@ -92,6 +125,9 @@ struct loginPage: View {
                 }
                 .padding(.vertical, 20)
             }
+            
+            
+            
 
             Button{
                 Task{
@@ -131,8 +167,51 @@ struct loginPage: View {
         .alert(loginModel.errorMsg, isPresented: $loginModel.showError){
             
         }
+        .padding(.top,-maxCircleHeight / 2.0)
+        .frame(maxHeight: .infinity, alignment:  .top)
+      
+        }
+        
+        .background(
+            
+            HStack{
+                Circle()
+                    .fill(Color("IconRed"))
+                    .frame(width: 90, height: 90)
+                    .offset(x:-20, y: 90)
+                   
+                
+                
+                Spacer(minLength: 0)
+                
+                Circle()
+                    .fill(Color("IconYellow"))
+                    .frame(width: 150, height: 150)
+                    .offset(x:40, y: 20)
+                  
+                
+                
+            }
+            
+          
+            
+            
+            ,alignment: .bottom
+  
+        
+        )
+        
     }
-}
+    
+    }
+    
+
+    
+
+
+
+
+
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
@@ -140,8 +219,19 @@ struct Login_Previews: PreviewProvider {
     }
 }
 
+
+
+
+
 // Extensions for UI Designing
 extension View{
+    func getRect()->CGRect{
+        return UIScreen.main.bounds
+        
+
+    }
+    
+
     
     func hLeading()-> some View{
         self.frame(maxWidth: .infinity, alignment: .leading)
